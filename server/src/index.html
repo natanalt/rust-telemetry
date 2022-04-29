@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rust Telemetry Example</title>
+
+        <style>
+            body {
+                background: #e3e9ff;
+                font-family: sans-serif;
+            }
+
+            main {
+                max-width: 1000px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            table, td, th {
+                border: 1px solid black;
+            }
+
+            td, th {
+                padding: 10px;
+            }
+
+            th {
+                background: #93B5C6;
+            }
+
+            tr:nth-child(even) {
+                background: #dfd8e4;
+            }
+
+            tr:nth-child(odd) {
+                background: #C9CCD5;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Telemetry record viewer</h1>
+            <p>
+                All received telemetry records from the client/proc crate.<br>
+                fuck telemetry
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>IP address</th>
+                        <th>Macro name</th>
+                        <th>Crate name</th>
+                        <th>Crate version</th>
+                        <th>Operating system</th>
+                        <th>TokenStream hash</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${data_goes_here}
+                </tbody>
+            </table>
+        </main>
+    </body>
+</html>
