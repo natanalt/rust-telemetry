@@ -20,7 +20,8 @@ This repository comes with 2 directories: server and client. Server is a simple 
 ## Server API
 The HTTP server is simple and defines 2 GET endpoints:
  * **/** - the root contains a simple HTML website dumping all taken records.
- * **/telemetry/{1}/{2}/{3}/{4}** - registers a new telemetry record. Those records aren't saved to disk. Paramaters:
+ * **/telemetry/{1}/{2}/{3}/{4}/{5}** - registers a new telemetry record. Those records aren't saved to disk. Paramaters:
+   - {1}: **macro_name** - name of called macro
    - {1}: **crate_name** - name of the caller crate
    - {2}: **crate_version** - version of the caller crate
    - {3}: **os_name** - OS name
